@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=data\ next
+comment0.target=Node(CustomerFile,\ Node)
+comment0.text=\r\n\ this\ is\ the\ constructor,\ it\ will\ initialise\ the\ variables\ of\ the\ Node\ object\r\n\ \r\n\ @param\ data\ \ \ \ \ \ this\ is\ the\ CustomerFile\ object\ that\ will\ make\ up\ the\ data\ of\ the\ node\r\n\ @param\ next\ \ \ \ \ \ this\ is\ the\ next\ Object\ in\ the\ list\r\n
+comment1.params=input
+comment1.target=void\ setData(CustomerFile)
+comment1.text=\r\n\ this\ method\ initialises\ the\ variable\ "nodeData"\ with\ a\ CustomerFile\ object\ as\ the\ data\ -\ method\ is\ void\r\n\ \r\n\ @param\ input\ \ \ \ \ this\ is\ the\ Object\ object\ which\ will\ be\ assigned\ to\ the\ Object\ object\ "nodeData"\r\n
+comment2.params=
+comment2.target=CustomerFile\ getData()
+comment2.text=\r\n\ this\ method\ returns\ the\ CustomerFile\ object\ data\ assigned\ to\ "nodeData"\r\n\ \r\n\ @return\ nodeData\ this\ is\ the\ CustomerFile\ object\ which\ contains\ the\ data\ for\ a\ customer\ file\r\n
+comment3.params=inputNext
+comment3.target=void\ setNext(Node)
+comment3.text=\r\n\ this\ method\ initialises\ the\ Node\ object\ "nextNode"\ with\ the\ Node\ input\ -\ method\ is\ void\r\n\ \r\n\ @param\ inputNext\ the\ Node\ which\ will\ initialise\ the\ variable\ "nextNode"\r\n
+comment4.params=
+comment4.target=Node\ getNext()
+comment4.text=\r\n\ this\ method\ returns\ the\ Node\ stored\ in\ the\ variable\ "nextNode"\ which\ is\ the\ next\ node\ in\ the\ linked\ list\r\n\ \r\n\ @return\ nextNode\ the\ Node\ which\ contains\ the\ next\ item\ in\ the\ linked\ list\r\n
+numComments=5

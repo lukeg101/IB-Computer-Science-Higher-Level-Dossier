@@ -1,0 +1,106 @@
+int left = start;
+        int right = end;
+        Node pivot = headNode;
+        if (isEmpty() == true)
+        {
+            System.out.println("The list is empty - cannot sort");
+        }
+        else
+        {
+            for (int j = 0; j<((left+right)/2);j++)
+            {
+                pivot = pivot.getNext();
+            }
+            Node temp = new Node();
+            Node leftNode = head;
+            Node rightNode = head;
+            while (right > left)
+            {
+                leftNode = head;
+                for (int j = 0; j < left; j++)
+                {
+                    leftNode = leftNode.getNext();
+                }
+                while (leftNode.getData().getSurname().compareTo(pivot.getData().getSurname()) < 0)
+                {
+                    left++;
+                    leftNode = leftNode.getNext();
+                }
+                rightNode = head;
+                for (int j = 0; j < right; j++)
+                {
+                    rightNode = rightNode.getNext();
+                }
+                while (pivot.getData().getSurname().compareTo(rightNode.getData().getSurname()) < 0)
+                {
+                    right--;
+                    rightNode = head;
+                    for (int j = 0; j < right; j++)
+                    {
+                        rightNode = rightNode.getNext();
+                    }
+                }
+                if (left <= right)
+                {
+                    temp = leftNode;
+                    leftNode = rightNode;
+                    rightNode = temp;
+                    left++;
+                    leftNode = leftNode.getNext();
+                    right--;
+                    rightNode = head;
+                    for (int j = 0; j < right; j++)
+                    {
+                        rightNode = rightNode.getNext();
+                    }
+                    int size = 1;
+                    temp = head;
+                    while (temp != lastNode)
+                    {
+                        temp = temp.getNext();
+                        size++;
+                    }
+                }
+            }
+            if (start < right)
+            {
+                sortList(start, right, headNode, lastNode);
+            }
+            if (left < end)
+            {
+                sortList(left, end, headNode, lastNode);
+            }
+        }
+		
+		
+		
+		bubble sort
+		
+		if (isEmpty() == true)
+        {
+            System.out.println("The list is empty - cannot sort");
+        }
+        else if (getHead().getNext() == null)
+        {
+            System.out.println("List sorted");
+        }
+        else
+        {
+            Node current = getHead(), temp;
+            boolean swapDone = true;
+            while (swapDone)
+            {
+                swapDone = false;
+                while (current != null)
+                {
+                    if (current.getData().getSurname().compareTo(current.getNext().getData().getSurname()) >0)
+                    {
+                        temp = current.getNext();
+                        current.setNext(temp.getNext());
+                        temp.setNext(current);
+                        swapDone = true;
+                    }
+                    current = current.getNext();
+                }
+            }
+        }

@@ -1,0 +1,18 @@
+good programming style
+between 1,000 and 3,000 lines of code
+documentation remarks for each method
+-purpose of method
+-parameters of the method
+-returns of a method
+implementation remarks and comments for difficult to read code
+programming technique
+-ID header to indicate the program name
+-author
+-date
+-school
+-purpose of class/program
+internal documentation
+-constant, type and variable declarations that have explanatory comments
+-identifiers with meaningful names
+-objects that are clearly separated and have comments for parameters
+-INDENTATION
